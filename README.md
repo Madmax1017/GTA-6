@@ -1,16 +1,35 @@
-# React + Vite
+# 🌴 Vice Project: Immersive Rockstar-Inspired Web Experience
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An premium, interactive landing page inspired by the Rockstar Games Grand Theft Auto VI layout. This project leverages React, Tailwind CSS, and the GreenSock Animation Platform (GSAP) to achieve complex "Antigravity" stacking layers, smooth scroll-synchronized video playback, and cinematic clip-path vector mask reveals.
 
-Currently, two official plugins are available:
+[![Framework: React](https://img.shields.io/badge/Framework-React-61dafb?style=flat-square&logo=react)](https://react.dev/)
+[![Animation: GSAP](https://img.shields.io/badge/Animation-GSAP-green?style=flat-square&logo=greensock)](https://gsap.com/)
+[![Styling: Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind_CSS-38bdf8?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Cinematic SVG Masking:** Scroll-controlled full-screen clip-path geometry that scales smoothly using GSAP `ScrollTrigger`.
+* **Hardware-Accelerated Video Scrubbing:** Seamlessly links user mouse-wheel velocity directly to high-definition video timelines without micro-stuttering or frame drops.
+* **"Antigravity" DOM Layering:** Clean absolute layer-stack sequencing that handles visibility overrides (`autoAlpha`), avoiding viewport clipping or layout collision bugs.
+* **Adaptive Typography:** Pixel-perfect integration of iconic layout typefaces including Chalet Comprimé, Pricedown, and Helvetica Neue weights.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Architecture & Tech Stack
+
+* **Frontend Library:** React (Functional components with hooks)
+* **Animation Engine:** GSAP & `@gsap/react` (`useGSAP` hook for scoped cleanup)
+* **Styling Pipeline:** Tailwind CSS featuring custom theme definitions for responsive fluid-typography scaling (`2xl`, `3xl` layouts)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have Node.js installed on your machine:
+```bash
+node -v
+npm -v
